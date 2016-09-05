@@ -1,0 +1,22 @@
+@(id: String, company: Form[models.Company])
+
+<html>
+    <head>
+        <title>Company Edit Form</title>
+    </head>
+    <body>
+        <h2>Update Company</h2>
+        
+        @helper.form(action = routes.Application.update(id)){
+        
+             @helper.inputText(company("id"), '_id -> "ABC_ID")
+            @helper.inputText(company("name"), '_label -> "Name")
+            @helper.inputText(company("status"), '_label -> "Status")
+            @helper.inputText(company("allocate"), '_label -> "Allocation")
+            @helper.inputText(company("t"), '_label -> "Type")
+            @helper.inputText(company("fund"), '_label -> "Funding Source")
+
+            <input type="submit" value="Update Company" />
+        }
+    </body>
+</html>

@@ -1,4 +1,4 @@
-name := """just-play-scala"""
+name := "LnP-Web-App"
 
 version := "1.0-SNAPSHOT"
 

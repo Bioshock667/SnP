@@ -22,7 +22,7 @@ object Contact {
         }
     }
 
-    def create(contact: Contact): Unit = {
+    def create(contact: Contact) = {
         DB.withConnection { implicit connection =>
 
             SQL("INSERT INTO contacts(name, emailAddress) VALUES ({name}, {emailAddress})").on(

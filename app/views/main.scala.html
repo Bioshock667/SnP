@@ -1,17 +1,32 @@
-@(companies: List[models.Company])
+@(companies: List[models.Company], company: Form[models.Company])
 
 <html>
-
     <head>
         <title>Just Play Scala</title>
     </head>
     <body>
+            <h2>New Contact</h2>
+
+            @helper.form(action = routes.Application.create) {
+                @helper.inputText(company("id"), '_id -> "ABC_ID")
+                @helper.inputText(company("name"), '_label -> "Name")
+                @helper.inputText(company("status"), '_label -> "Status")
+                @helper.inputText(company("allocate"), '_label -> "Allocation")
+                @helper.inputText(company("t"), '_label -> "Type")
+                @helper.inputText(company("fund"), '_label -> "Funding Source")
+
+                <input type="submit" value="New Contact" />
+            }
+
         <table border="1px black">
             <thead>
             <tr>
                 <th>ABC_ID</th>
                 <th>Company Name</th>
                 <th>Status</th>
+                <th>Allocation</th>
+                <th>Type</th>
+                <th>Funding Source</th>
             </tr>
             </thead>
             <tbody>
@@ -20,6 +35,17 @@
                     <td>@company.id</td>
                     <td>@company.name</td>
                     <td>@company.status</td>
+                    <td>@company.allocate</td>
+                    <td>@company.t</td>
+                    <td>@company.fund</td>
+                    <td>
+                        <a href='@routes.Application.edit(company.id)'>Edit</a>
+                    </td>
+                    <td>
+                        @helper.form(action = routes.Application.delete(company.id)){
+                            <input type="submit" value="Delete" />
+                        }
+                    </td>
                 </tr>
                 }
             </tbody>
