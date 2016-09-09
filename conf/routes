@@ -6,6 +6,9 @@
 GET     /                           controllers.Application.index
 
 # Tasks
+GET     /login                      controllers.Application.login
+GET     /logout                     controllers.Application.logout
+POST    /login                      controllers.Application.authenticate
 POST    /                           controllers.Application.create
 GET    /edit/:id                    controllers.Application.edit(id: String)
 POST    /update/:id                 controllers.Application.update(id: String)

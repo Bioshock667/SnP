@@ -6,7 +6,7 @@
     </head>
     <body>
             <h2>New Contact</h2>
-
+            <a href ='@routes.Application.logout'>Logout</a>
             @helper.form(action = routes.Application.create) {
                 @helper.inputText(company("id"), '_id -> "ABC_ID")
                 @helper.inputText(company("name"), '_label -> "Name")

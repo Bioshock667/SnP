@@ -1,0 +1,15 @@
+@(login: Form[models.Login], message: String)
+
+<html>
+    <head>
+        <title>LnP Login</title>
+    </head>
+    <body>
+        <p>@message</p>
+        @helper.form(action = routes.Application.authenticate) {
+            @helper.inputText(login("email"), '_label -> "Your Email Address")
+            @helper.inputText(login("password"), '_label -> "Your Password")
+            <input type="submit"  value="Login" />
+        }
+    </body>
+</html>
