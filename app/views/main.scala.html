@@ -1,11 +1,12 @@
-@(companies: List[models.Company], company: Form[models.Company])
+@(companies: List[models.Company], company: Form[models.Company])(implicit session: play.api.mvc.Session)
 
 <html>
     <head>
-        <title>Just Play Scala</title>
+        <title>Welcome to SnP Server Site</title>
     </head>
     <body>
-            <h2>New Contact</h2>
+            <p>Welcome @session.get("first_name")</p>
+            <h2>New Company</h2>
             <a href ='@routes.Application.logout'>Logout</a>
             @helper.form(action = routes.Application.create) {
                 @helper.inputText(company("id"), '_id -> "ABC_ID")
@@ -15,7 +16,7 @@
                 @helper.inputText(company("t"), '_label -> "Type")
                 @helper.inputText(company("fund"), '_label -> "Funding Source")
 
-                <input type="submit" value="New Contact" />
+                <input type="submit" value="New Company" />
             }
 
         <table border="1px black">

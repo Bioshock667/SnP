@@ -1,0 +1,6 @@
+[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(/home/seth/Documents/LnP-Web-App/conf/application.conf,/home/seth/Documents/LnP-Web-App/target/scala-2.11/classes/application.conf)[0m
+[0m[[0mdebug[0m] [0m	(/home/seth/Documents/LnP-Web-App/conf/evolutions,/home/seth/Documents/LnP-Web-App/target/scala-2.11/classes/evolutions)[0m
+[0m[[0mdebug[0m] [0m	(/home/seth/Documents/LnP-Web-App/conf/routes,/home/seth/Documents/LnP-Web-App/target/scala-2.11/classes/routes)[0m
+[0m[[0mdebug[0m] [0m	(/home/seth/Documents/LnP-Web-App/conf/evolutions/default,/home/seth/Documents/LnP-Web-App/target/scala-2.11/classes/evolutions/default)[0m
+[0m[[0mdebug[0m] [0m	(/home/seth/Documents/LnP-Web-App/conf/evolutions/default/1.sql,/home/seth/Documents/LnP-Web-App/target/scala-2.11/classes/evolutions/default/1.sql)[0m

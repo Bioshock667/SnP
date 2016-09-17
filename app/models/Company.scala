@@ -7,7 +7,10 @@ import play.api.Play.current
 case class Company (id: String, name: String, status: String, allocate: String, t: String, fund: String)
 
 object Company {
-
+/*
+    This function connects to a MySQL database and queries for the first 20 entries of the
+    table.  It returns the list of Company objects.
+ */
     def all = {
 
         DB.withConnection { implicit connection =>
@@ -24,7 +27,9 @@ object Company {
             }.toList
         }
     }
-
+/*
+    THis function takes in a company object and sends it to a database to be inserted.
+ */
     def create(company: Company) = {
         DB.withConnection { implicit connection =>
 
@@ -39,7 +44,10 @@ object Company {
         ).execute()
         }
     }
-
+/*
+    This function takes the id and queries for an entry with that id and returns it as
+    a company object
+ */
     def get(id: String) = {
         DB.withConnection { implicit connection =>
             SQL("SELECT * FROM test_table WHERE ABC_ID={id}").on("id" -> id)().headOption.map {row =>
@@ -54,7 +62,10 @@ object Company {
             }
         }
     }
-    
+
+    /*
+    This function takes the id and the company object and passes to a UPDATE query
+     */
     def update(id: String, company: Company) {
         DB.withConnection { implicit connection =>
             SQL("UPDATE test_table SET Name={name}, Active_Inactive={status} WHERE ABC_ID={id}").on(
@@ -64,7 +75,11 @@ object Company {
                 ).execute()
         }
     }
-    
+
+    /**
+      * This function deletes an entry from the database
+      * @param id the id of the entry to be deleted
+      */
     def delete(id: String) {
         DB.withConnection{ implicit connection =>
             SQL("DELETE FROM test_table WHERE ABC_ID={id}").on("id" -> id).execute()
