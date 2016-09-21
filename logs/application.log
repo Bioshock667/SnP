@@ -1,9 +1,9 @@
-2016-09-17 15:25:08,213 - [INFO] - from play in play-fork-run-akka.actor.default-dispatcher-5 
+2016-09-21 00:09:45,789 - [INFO] - from play in play-fork-run-akka.actor.default-dispatcher-5 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
-2016-09-17 15:26:09,121 - [INFO] - from play in play-internal-execution-context-1 
+2016-09-21 00:10:29,081 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:mysql://pearsonfamilyhome.asuscomm.com:3307/sample?characterEncoding=UTF-8
 
-2016-09-17 15:26:09,567 - [INFO] - from play in play-internal-execution-context-1 
+2016-09-21 00:10:29,526 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 

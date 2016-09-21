@@ -1,1 +1,14 @@
 @(user: Form[models.User])
+
+@helper.form(action = routes.Application.newUser) {
+    @helper.inputText(user("first_name"), '_label -> "First Name")
+    @helper.inputText(user("last_name"), '_label -> "Last Name")
+    @helper.inputText(user("email_address"), '_label -> "Email Address")
+    @helper.inputText(user("password"), '_label -> "Password")
+    @helper.inputText(user("company"), '_label -> "Company")
+    @helper.inputText(user("mailing_address"), '_label -> "Mailing Address")
+    @helper.inputText(user("occupation"), '_label -> "Occupation")
+    @helper.inputText(user("birth_date"), '_label -> "Birth Date")
+
+    <input type="submit" value="New User" />
+}

@@ -13,13 +13,13 @@ import play.api.data._
 import views.html._
 
 /**/
-object edit extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template2[String,Form[models.Company],play.twirl.api.HtmlFormat.Appendable] {
+object edit extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template2[Int,Form[models.Company],play.twirl.api.HtmlFormat.Appendable] {
 
   /**/
-  def apply/*1.2*/(id: String, company: Form[models.Company]):play.twirl.api.HtmlFormat.Appendable = {
+  def apply/*1.2*/(id: Int, company: Form[models.Company]):play.twirl.api.HtmlFormat.Appendable = {
       _display_ {
 
-Seq[Any](format.raw/*1.45*/("""
+Seq[Any](format.raw/*1.42*/("""
 
 """),format.raw/*3.1*/("""<html>
     <head>
@@ -28,7 +28,7 @@ Seq[Any](format.raw/*1.45*/("""
     <body>
         <h2>Update Company</h2>
         
-        """),_display_(/*10.10*/helper/*10.16*/.form(action = routes.Application.update(id))/*10.61*/{_display_(Seq[Any](format.raw/*10.62*/("""
+        """),_display_(/*10.10*/helper/*10.16*/.form(action = routes.Application.updateUser(id))/*10.65*/{_display_(Seq[Any](format.raw/*10.66*/("""
         
              """),_display_(/*12.15*/helper/*12.21*/.inputText(company("id"), '_id -> "ABC_ID")),format.raw/*12.64*/("""
             """),_display_(/*13.14*/helper/*13.20*/.inputText(company("name"), '_label -> "Name")),format.raw/*13.66*/("""
@@ -43,19 +43,19 @@ Seq[Any](format.raw/*1.45*/("""
 </html>"""))}
   }
 
-  def render(id:String,company:Form[models.Company]): play.twirl.api.HtmlFormat.Appendable = apply(id,company)
+  def render(id:Int,company:Form[models.Company]): play.twirl.api.HtmlFormat.Appendable = apply(id,company)
 
-  def f:((String,Form[models.Company]) => play.twirl.api.HtmlFormat.Appendable) = (id,company) => apply(id,company)
+  def f:((Int,Form[models.Company]) => play.twirl.api.HtmlFormat.Appendable) = (id,company) => apply(id,company)
 
   def ref: this.type = this
 
 }
               /*
                   -- GENERATED --
-                  DATE: Sat Sep 17 15:21:31 PDT 2016
+                  DATE: Tue Sep 20 00:34:16 PDT 2016
                   SOURCE: /home/seth/Documents/LnP-Web-App/app/views/edit.scala.html
-                  HASH: 47fb32ea37b759b76f6fef793fb9387daaac8c41
-                  MATRIX: 525->1|656->44|684->46|843->178|858->184|912->229|951->230|1002->254|1017->260|1081->303|1122->317|1137->323|1204->369|1245->383|1260->389|1331->439|1372->453|1387->459|1464->515|1505->529|1520->535|1584->578|1625->592|1640->598|1717->654|1759->668|1846->724|1878->729
+                  HASH: a28308ff321b939ece4d8b94b0e919a3b8a999b6
+                  MATRIX: 522->1|650->41|678->43|837->175|852->181|910->230|949->231|1000->255|1015->261|1079->304|1120->318|1135->324|1202->370|1243->384|1258->390|1329->440|1370->454|1385->460|1462->516|1503->530|1518->536|1582->579|1623->593|1638->599|1715->655|1757->669|1844->725|1876->730
                   LINES: 19->1|22->1|24->3|31->10|31->10|31->10|31->10|33->12|33->12|33->12|34->13|34->13|34->13|35->14|35->14|35->14|36->15|36->15|36->15|37->16|37->16|37->16|38->17|38->17|38->17|40->19|41->20|42->21
                   -- GENERATED --
               */

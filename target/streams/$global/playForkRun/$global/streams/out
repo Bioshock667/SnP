@@ -257,7 +257,7 @@
 [0m[[0minfo[0m] [0m[0m
 [0m[[0minfo[0m] [0m[32m(Server started, use Ctrl+D to stop and go back to the console...)[0m[0m
 [0m[[0minfo[0m] [0m[0m
-[0m[[0minfo[0m] [0mCompiling 10 Scala sources and 1 Java source to /home/seth/Documents/LnP-Web-App/target/scala-2.11/classes...[0m
+[0m[[0minfo[0m] [0mCompiling 12 Scala sources and 1 Java source to /home/seth/Documents/LnP-Web-App/target/scala-2.11/classes...[0m
 [0m[[33mwarn[0m] [0m/home/seth/Documents/LnP-Web-App/app/models/Company.scala:18: method apply in trait WithResult is deprecated: Use [[fold]], [[foldWhile]] or [[withResult]] instead, which manages resources and memory[0m
 [0m[[33mwarn[0m] [0m            SQL("SELECT * FROM test_table limit 20")().map { row =>[0m
 [0m[[33mwarn[0m] [0m               ^[0m
@@ -265,15 +265,26 @@
 [0m[[33mwarn[0m] [0m            SQL("SELECT * FROM test_table WHERE ABC_ID={id}").on("id" -> id)().headOption.map {row =>[0m
 [0m[[33mwarn[0m] [0m                                                                ^[0m
 [0m[[33mwarn[0m] [0m/home/seth/Documents/LnP-Web-App/app/models/Login.scala:13: method apply in trait WithResult is deprecated: Use [[fold]], [[foldWhile]] or [[withResult]] instead, which manages resources and memory[0m
-[0m[[33mwarn[0m] [0m            SQL("SELECT first_name, last_name, email_address, passwd FROM UserTable WHERE email_address={email}").on ("email" -> email)().headOption.map { row =>[0m
-[0m[[33mwarn[0m] [0m                                                                                                                     ^[0m
-[0m[[33mwarn[0m] [0mthree warnings found[0m
-[0m[[0minfo[0m] [0mplay - database [default] connected at jdbc:mysql://pearsonfamilyhome.asuscomm.com:3307/sample?characterEncoding=UTF-8[0m
-[0m[[0minfo[0m] [0mplay - Application started (Dev)[0m
-[0m[[0minfo[0m] [0mlogin successful[0m
-[0m[[0minfo[0m] [0mlogin successful[0m
-[0m[[0minfo[0m] [0mverifyingfireoptic93@gmail.com[0m
+[0m[[33mwarn[0m] [0m            SQL("SELECT email_address, passwd FROM UserTable WHERE email_address={email}").on ("email" -> email)().headOption.map { row =>[0m
+[0m[[33mwarn[0m] [0m                                                                                              ^[0m
+[0m[[33mwarn[0m] [0m/home/seth/Documents/LnP-Web-App/app/models/User.scala:33: method apply in trait WithResult is deprecated: Use [[fold]], [[foldWhile]] or [[withResult]] instead, which manages resources and memory[0m
+[0m[[33mwarn[0m] [0m      SQL("SELECT * FROM UserTable WHERE manager_id={MID}").on("MID" -> manager_id)().map { row =>[0m
+[0m[[33mwarn[0m] [0m                                                              ^[0m
+[0m[[33mwarn[0m] [0m/home/seth/Documents/LnP-Web-App/app/models/User.scala:88: method apply in trait WithResult is deprecated: Use [[fold]], [[foldWhile]] or [[withResult]] instead, which manages resources and memory[0m
+[0m[[33mwarn[0m] [0m      SQL("SELECT * FROM UserTable WHERE email_address={email}").on("email" -> email)().headOption.map { row =>[0m
+[0m[[33mwarn[0m] [0m                                                                   ^[0m
+[0m[[33mwarn[0m] [0m5 warnings found[0m
+[0m[[31merror[0m] [0mapplication - [0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m! Internal server error, for (GET) [/] ->[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0makka.pattern.AskTimeoutException: Ask timed out on [Actor[akka://play-fork-run/user/fork-run#746960200]] after [300000 ms][0m
+[0m[[0minfo[0m] [0m	at akka.pattern.PromiseActorRef$$anonfun$1.apply$mcV$sp(AskSupport.scala:333) ~[akka-actor_2.11-2.3.4.jar:na][0m
+[0m[[0minfo[0m] [0m	at akka.actor.Scheduler$$anon$7.run(Scheduler.scala:117) ~[akka-actor_2.11-2.3.4.jar:na][0m
+[0m[[0minfo[0m] [0m	at scala.concurrent.Future$InternalCallbackExecutor$.unbatchedExecute(Future.scala:599) ~[scala-library.jar:na][0m
+[0m[[0minfo[0m] [0m	at scala.concurrent.BatchingExecutor$class.execute(BatchingExecutor.scala:109) ~[scala-library.jar:na][0m
+[0m[[0minfo[0m] [0m	at scala.concurrent.Future$InternalCallbackExecutor$.execute(Future.scala:597) ~[scala-library.jar:na][0m
+[0m[[33mwarn[0m] [0mplay - No application found at invoker init[0m
 [0m[[0minfo[0m] [0mJVM exiting, shutting down Play fork run ...[0m
-[0m[[0minfo[0m] [0mStopping Play fork run ...[0m
 [0m[[0minfo[0m] [0mPlay fork run already stopped ...[0m
 [0m[[0minfo[0m] [0mForked Play process exited with status 130[0m

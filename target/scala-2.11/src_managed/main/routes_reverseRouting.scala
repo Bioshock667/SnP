@@ -1,6 +1,6 @@
 // @SOURCE:/home/seth/Documents/LnP-Web-App/conf/routes
-// @HASH:02e455efa1dac87ad0d90f5c2730343aa906f9b7
-// @DATE:Sat Sep 17 15:21:30 PDT 2016
+// @HASH:aaa36a29afc60904d9821055ef192b8262ec77ae
+// @DATE:Tue Sep 20 23:49:17 PDT 2016
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -14,7 +14,6 @@ import _root_.controllers.Assets.Asset
 import Router.queryString
 
 
-// @LINE:17
 // @LINE:16
 // @LINE:15
 // @LINE:14
@@ -26,7 +25,6 @@ import Router.queryString
 // @LINE:6
 package controllers {
 
-// @LINE:17
 // @LINE:16
 // @LINE:15
 // @LINE:14
@@ -39,24 +37,24 @@ package controllers {
 class ReverseApplication {
 
 
-// @LINE:14
-def edit(id:String): Call = {
-   import ReverseRouteContext.empty
-   Call("GET", _prefix + { _defaultPrefix } + "edit/" + implicitly[PathBindable[String]].unbind("id", dynamicString(id)))
-}
-                        
-
-// @LINE:13
-def create(): Call = {
-   import ReverseRouteContext.empty
-   Call("POST", _prefix)
-}
-                        
-
 // @LINE:12
-def signup(): Call = {
+def signUp(): Call = {
    import ReverseRouteContext.empty
-   Call("GET", _prefix + { _defaultPrefix } + "signup")
+   Call("GET", _prefix + { _defaultPrefix } + "newUser")
+}
+                        
+
+// @LINE:14
+def updateUser(id:Int): Call = {
+   import ReverseRouteContext.empty
+   Call("POST", _prefix + { _defaultPrefix } + "updateUser/" + implicitly[PathBindable[Int]].unbind("id", id))
+}
+                        
+
+// @LINE:15
+def deleteUser(id:Int): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "deleteUser/" + implicitly[PathBindable[Int]].unbind("id", id))
 }
                         
 
@@ -67,17 +65,10 @@ def logout(): Call = {
 }
                         
 
-// @LINE:16
-def delete(id:String): Call = {
+// @LINE:13
+def editUser(id:Int): Call = {
    import ReverseRouteContext.empty
-   Call("GET", _prefix + { _defaultPrefix } + "delete/" + implicitly[PathBindable[String]].unbind("id", dynamicString(id)))
-}
-                        
-
-// @LINE:15
-def update(id:String): Call = {
-   import ReverseRouteContext.empty
-   Call("POST", _prefix + { _defaultPrefix } + "update/" + implicitly[PathBindable[String]].unbind("id", dynamicString(id)))
+   Call("GET", _prefix + { _defaultPrefix } + "editUser/" + implicitly[PathBindable[Int]].unbind("id", id))
 }
                         
 
@@ -88,7 +79,7 @@ def authenticate(): Call = {
 }
                         
 
-// @LINE:17
+// @LINE:16
 def newUser(): Call = {
    import ReverseRouteContext.empty
    Call("POST", _prefix + { _defaultPrefix } + "newuser")
@@ -115,7 +106,6 @@ def login(): Call = {
                   
 
 
-// @LINE:17
 // @LINE:16
 // @LINE:15
 // @LINE:14
@@ -128,7 +118,6 @@ def login(): Call = {
 package controllers.javascript {
 import ReverseRouteContext.empty
 
-// @LINE:17
 // @LINE:16
 // @LINE:15
 // @LINE:14
@@ -141,34 +130,34 @@ import ReverseRouteContext.empty
 class ReverseApplication {
 
 
+// @LINE:12
+def signUp : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.Application.signUp",
+   """
+      function() {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "newUser"})
+      }
+   """
+)
+                        
+
 // @LINE:14
-def edit : JavascriptReverseRoute = JavascriptReverseRoute(
-   "controllers.Application.edit",
+def updateUser : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.Application.updateUser",
    """
       function(id) {
-      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "edit/" + (""" + implicitly[PathBindable[String]].javascriptUnbind + """)("id", encodeURIComponent(id))})
+      return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "updateUser/" + (""" + implicitly[PathBindable[Int]].javascriptUnbind + """)("id", id)})
       }
    """
 )
                         
 
-// @LINE:13
-def create : JavascriptReverseRoute = JavascriptReverseRoute(
-   "controllers.Application.create",
+// @LINE:15
+def deleteUser : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.Application.deleteUser",
    """
-      function() {
-      return _wA({method:"POST", url:"""" + _prefix + """"})
-      }
-   """
-)
-                        
-
-// @LINE:12
-def signup : JavascriptReverseRoute = JavascriptReverseRoute(
-   "controllers.Application.signup",
-   """
-      function() {
-      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "signup"})
+      function(id) {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "deleteUser/" + (""" + implicitly[PathBindable[Int]].javascriptUnbind + """)("id", id)})
       }
    """
 )
@@ -185,23 +174,12 @@ def logout : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:16
-def delete : JavascriptReverseRoute = JavascriptReverseRoute(
-   "controllers.Application.delete",
+// @LINE:13
+def editUser : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.Application.editUser",
    """
       function(id) {
-      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "delete/" + (""" + implicitly[PathBindable[String]].javascriptUnbind + """)("id", encodeURIComponent(id))})
-      }
-   """
-)
-                        
-
-// @LINE:15
-def update : JavascriptReverseRoute = JavascriptReverseRoute(
-   "controllers.Application.update",
-   """
-      function(id) {
-      return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "update/" + (""" + implicitly[PathBindable[String]].javascriptUnbind + """)("id", encodeURIComponent(id))})
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "editUser/" + (""" + implicitly[PathBindable[Int]].javascriptUnbind + """)("id", id)})
       }
    """
 )
@@ -218,7 +196,7 @@ def authenticate : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:17
+// @LINE:16
 def newUser : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.Application.newUser",
    """
@@ -257,7 +235,6 @@ def login : JavascriptReverseRoute = JavascriptReverseRoute(
         
 
 
-// @LINE:17
 // @LINE:16
 // @LINE:15
 // @LINE:14
@@ -270,7 +247,6 @@ def login : JavascriptReverseRoute = JavascriptReverseRoute(
 package controllers.ref {
 
 
-// @LINE:17
 // @LINE:16
 // @LINE:15
 // @LINE:14
@@ -283,21 +259,21 @@ package controllers.ref {
 class ReverseApplication {
 
 
-// @LINE:14
-def edit(id:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
-   controllers.Application.edit(id), HandlerDef(this.getClass.getClassLoader, "", "controllers.Application", "edit", Seq(classOf[String]), "GET", """""", _prefix + """edit/$id<[^/]+>""")
-)
-                      
-
-// @LINE:13
-def create(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
-   controllers.Application.create(), HandlerDef(this.getClass.getClassLoader, "", "controllers.Application", "create", Seq(), "POST", """""", _prefix + """""")
-)
-                      
-
 // @LINE:12
-def signup(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
-   controllers.Application.signup(), HandlerDef(this.getClass.getClassLoader, "", "controllers.Application", "signup", Seq(), "GET", """""", _prefix + """signup""")
+def signUp(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.Application.signUp(), HandlerDef(this.getClass.getClassLoader, "", "controllers.Application", "signUp", Seq(), "GET", """""", _prefix + """newUser""")
+)
+                      
+
+// @LINE:14
+def updateUser(id:Int): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.Application.updateUser(id), HandlerDef(this.getClass.getClassLoader, "", "controllers.Application", "updateUser", Seq(classOf[Int]), "POST", """""", _prefix + """updateUser/$id<[^/]+>""")
+)
+                      
+
+// @LINE:15
+def deleteUser(id:Int): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.Application.deleteUser(id), HandlerDef(this.getClass.getClassLoader, "", "controllers.Application", "deleteUser", Seq(classOf[Int]), "GET", """""", _prefix + """deleteUser/$id<[^/]+>""")
 )
                       
 
@@ -307,15 +283,9 @@ def logout(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 )
                       
 
-// @LINE:16
-def delete(id:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
-   controllers.Application.delete(id), HandlerDef(this.getClass.getClassLoader, "", "controllers.Application", "delete", Seq(classOf[String]), "GET", """""", _prefix + """delete/$id<[^/]+>""")
-)
-                      
-
-// @LINE:15
-def update(id:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
-   controllers.Application.update(id), HandlerDef(this.getClass.getClassLoader, "", "controllers.Application", "update", Seq(classOf[String]), "POST", """""", _prefix + """update/$id<[^/]+>""")
+// @LINE:13
+def editUser(id:Int): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.Application.editUser(id), HandlerDef(this.getClass.getClassLoader, "", "controllers.Application", "editUser", Seq(classOf[Int]), "GET", """""", _prefix + """editUser/$id<[^/]+>""")
 )
                       
 
@@ -325,7 +295,7 @@ def authenticate(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 )
                       
 
-// @LINE:17
+// @LINE:16
 def newUser(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.Application.newUser(), HandlerDef(this.getClass.getClassLoader, "", "controllers.Application", "newUser", Seq(), "POST", """""", _prefix + """newuser""")
 )

@@ -1,6 +1,6 @@
 // @SOURCE:/home/seth/Documents/LnP-Web-App/conf/routes
-// @HASH:02e455efa1dac87ad0d90f5c2730343aa906f9b7
-// @DATE:Sat Sep 17 15:21:30 PDT 2016
+// @HASH:aaa36a29afc60904d9821055ef192b8262ec77ae
+// @DATE:Tue Sep 20 23:49:17 PDT 2016
 
 
 import scala.language.reflectiveCalls
@@ -61,47 +61,40 @@ HandlerDef(this.getClass.getClassLoader, "", "controllers.Application", "authent
         
 
 // @LINE:12
-private[this] lazy val controllers_Application_signup4_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("signup"))))
-private[this] lazy val controllers_Application_signup4_invoker = createInvoker(
-controllers.Application.signup,
-HandlerDef(this.getClass.getClassLoader, "", "controllers.Application", "signup", Nil,"GET", """""", Routes.prefix + """signup"""))
+private[this] lazy val controllers_Application_signUp4_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("newUser"))))
+private[this] lazy val controllers_Application_signUp4_invoker = createInvoker(
+controllers.Application.signUp,
+HandlerDef(this.getClass.getClassLoader, "", "controllers.Application", "signUp", Nil,"GET", """""", Routes.prefix + """newUser"""))
         
 
 // @LINE:13
-private[this] lazy val controllers_Application_create5_route = Route("POST", PathPattern(List(StaticPart(Routes.prefix))))
-private[this] lazy val controllers_Application_create5_invoker = createInvoker(
-controllers.Application.create,
-HandlerDef(this.getClass.getClassLoader, "", "controllers.Application", "create", Nil,"POST", """""", Routes.prefix + """"""))
+private[this] lazy val controllers_Application_editUser5_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("editUser/"),DynamicPart("id", """[^/]+""",true))))
+private[this] lazy val controllers_Application_editUser5_invoker = createInvoker(
+controllers.Application.editUser(fakeValue[Int]),
+HandlerDef(this.getClass.getClassLoader, "", "controllers.Application", "editUser", Seq(classOf[Int]),"GET", """""", Routes.prefix + """editUser/$id<[^/]+>"""))
         
 
 // @LINE:14
-private[this] lazy val controllers_Application_edit6_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("edit/"),DynamicPart("id", """[^/]+""",true))))
-private[this] lazy val controllers_Application_edit6_invoker = createInvoker(
-controllers.Application.edit(fakeValue[String]),
-HandlerDef(this.getClass.getClassLoader, "", "controllers.Application", "edit", Seq(classOf[String]),"GET", """""", Routes.prefix + """edit/$id<[^/]+>"""))
+private[this] lazy val controllers_Application_updateUser6_route = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("updateUser/"),DynamicPart("id", """[^/]+""",true))))
+private[this] lazy val controllers_Application_updateUser6_invoker = createInvoker(
+controllers.Application.updateUser(fakeValue[Int]),
+HandlerDef(this.getClass.getClassLoader, "", "controllers.Application", "updateUser", Seq(classOf[Int]),"POST", """""", Routes.prefix + """updateUser/$id<[^/]+>"""))
         
 
 // @LINE:15
-private[this] lazy val controllers_Application_update7_route = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("update/"),DynamicPart("id", """[^/]+""",true))))
-private[this] lazy val controllers_Application_update7_invoker = createInvoker(
-controllers.Application.update(fakeValue[String]),
-HandlerDef(this.getClass.getClassLoader, "", "controllers.Application", "update", Seq(classOf[String]),"POST", """""", Routes.prefix + """update/$id<[^/]+>"""))
+private[this] lazy val controllers_Application_deleteUser7_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("deleteUser/"),DynamicPart("id", """[^/]+""",true))))
+private[this] lazy val controllers_Application_deleteUser7_invoker = createInvoker(
+controllers.Application.deleteUser(fakeValue[Int]),
+HandlerDef(this.getClass.getClassLoader, "", "controllers.Application", "deleteUser", Seq(classOf[Int]),"GET", """""", Routes.prefix + """deleteUser/$id<[^/]+>"""))
         
 
 // @LINE:16
-private[this] lazy val controllers_Application_delete8_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("delete/"),DynamicPart("id", """[^/]+""",true))))
-private[this] lazy val controllers_Application_delete8_invoker = createInvoker(
-controllers.Application.delete(fakeValue[String]),
-HandlerDef(this.getClass.getClassLoader, "", "controllers.Application", "delete", Seq(classOf[String]),"GET", """""", Routes.prefix + """delete/$id<[^/]+>"""))
-        
-
-// @LINE:17
-private[this] lazy val controllers_Application_newUser9_route = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("newuser"))))
-private[this] lazy val controllers_Application_newUser9_invoker = createInvoker(
+private[this] lazy val controllers_Application_newUser8_route = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("newuser"))))
+private[this] lazy val controllers_Application_newUser8_invoker = createInvoker(
 controllers.Application.newUser,
 HandlerDef(this.getClass.getClassLoader, "", "controllers.Application", "newUser", Nil,"POST", """""", Routes.prefix + """newuser"""))
         
-def documentation = List(("""GET""", prefix,"""controllers.Application.index"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """login""","""controllers.Application.login"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """logout""","""controllers.Application.logout"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """login""","""controllers.Application.authenticate"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """signup""","""controllers.Application.signup"""),("""POST""", prefix,"""controllers.Application.create"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """edit/$id<[^/]+>""","""controllers.Application.edit(id:String)"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """update/$id<[^/]+>""","""controllers.Application.update(id:String)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """delete/$id<[^/]+>""","""controllers.Application.delete(id:String)"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """newuser""","""controllers.Application.newUser""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
+def documentation = List(("""GET""", prefix,"""controllers.Application.index"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """login""","""controllers.Application.login"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """logout""","""controllers.Application.logout"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """login""","""controllers.Application.authenticate"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """newUser""","""controllers.Application.signUp"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """editUser/$id<[^/]+>""","""controllers.Application.editUser(id:Int)"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """updateUser/$id<[^/]+>""","""controllers.Application.updateUser(id:Int)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """deleteUser/$id<[^/]+>""","""controllers.Application.deleteUser(id:Int)"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """newuser""","""controllers.Application.newUser""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
   case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
   case l => s ++ l.asInstanceOf[List[(String,String,String)]]
 }}
@@ -142,49 +135,41 @@ case controllers_Application_authenticate3_route(params) => {
         
 
 // @LINE:12
-case controllers_Application_signup4_route(params) => {
+case controllers_Application_signUp4_route(params) => {
    call { 
-        controllers_Application_signup4_invoker.call(controllers.Application.signup)
+        controllers_Application_signUp4_invoker.call(controllers.Application.signUp)
    }
 }
         
 
 // @LINE:13
-case controllers_Application_create5_route(params) => {
-   call { 
-        controllers_Application_create5_invoker.call(controllers.Application.create)
+case controllers_Application_editUser5_route(params) => {
+   call(params.fromPath[Int]("id", None)) { (id) =>
+        controllers_Application_editUser5_invoker.call(controllers.Application.editUser(id))
    }
 }
         
 
 // @LINE:14
-case controllers_Application_edit6_route(params) => {
-   call(params.fromPath[String]("id", None)) { (id) =>
-        controllers_Application_edit6_invoker.call(controllers.Application.edit(id))
+case controllers_Application_updateUser6_route(params) => {
+   call(params.fromPath[Int]("id", None)) { (id) =>
+        controllers_Application_updateUser6_invoker.call(controllers.Application.updateUser(id))
    }
 }
         
 
 // @LINE:15
-case controllers_Application_update7_route(params) => {
-   call(params.fromPath[String]("id", None)) { (id) =>
-        controllers_Application_update7_invoker.call(controllers.Application.update(id))
+case controllers_Application_deleteUser7_route(params) => {
+   call(params.fromPath[Int]("id", None)) { (id) =>
+        controllers_Application_deleteUser7_invoker.call(controllers.Application.deleteUser(id))
    }
 }
         
 
 // @LINE:16
-case controllers_Application_delete8_route(params) => {
-   call(params.fromPath[String]("id", None)) { (id) =>
-        controllers_Application_delete8_invoker.call(controllers.Application.delete(id))
-   }
-}
-        
-
-// @LINE:17
-case controllers_Application_newUser9_route(params) => {
+case controllers_Application_newUser8_route(params) => {
    call { 
-        controllers_Application_newUser9_invoker.call(controllers.Application.newUser)
+        controllers_Application_newUser8_invoker.call(controllers.Application.newUser)
    }
 }
         

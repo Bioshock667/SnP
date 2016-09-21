@@ -1,17 +1,2 @@
-run
-compile
-run
-compile run
-run
-test
-run
-compile
-exit
-compile
-exit
-compile
-run
-clean compile run
-clean
 compile
 run

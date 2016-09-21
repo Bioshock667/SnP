@@ -10,7 +10,7 @@ object Login {
 
     def get(email: String) = {
         DB.withConnection { implicit connection =>
-            SQL("SELECT first_name, last_name, email_address, passwd FROM UserTable WHERE email_address={email}").on ("email" -> email)().headOption.map { row =>
+            SQL("SELECT email_address, passwd FROM UserTable WHERE email_address={email}").on ("email" -> email)().headOption.map { row =>
                 Login(
                     email = row[String]("email_address"),
                     password = row[String]("passwd")

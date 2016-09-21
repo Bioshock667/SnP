@@ -9,11 +9,10 @@ GET     /                           controllers.Application.index
 GET     /login                      controllers.Application.login
 GET     /logout                     controllers.Application.logout
 POST    /login                      controllers.Application.authenticate
-GET     /signup                     controllers.Application.signup
-POST    /                           controllers.Application.create
-GET    /edit/:id                    controllers.Application.edit(id: String)
-POST    /update/:id                 controllers.Application.update(id: String)
-GET     /delete/:id                 controllers.Application.delete(id: String)
+GET     /newUser                     controllers.Application.signUp
+GET     /editUser/:id               controllers.Application.editUser(id: Int)
+POST    /updateUser/:id             controllers.Application.updateUser(id: Int)
+GET     /deleteUser/:id             controllers.Application.deleteUser(id: Int)
 POST    /newuser                    controllers.Application.newUser
 
 # Map static resources from the /public folder to the /assets URL path

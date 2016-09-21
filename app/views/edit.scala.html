@@ -1,4 +1,4 @@
-@(id: String, company: Form[models.Company])
+@(id: Int, company: Form[models.Company])
 
 <html>
     <head>
@@ -7,7 +7,7 @@
     <body>
         <h2>Update Company</h2>
         
-        @helper.form(action = routes.Application.update(id)){
+        @helper.form(action = routes.Application.updateUser(id)){
         
              @helper.inputText(company("id"), '_id -> "ABC_ID")
             @helper.inputText(company("name"), '_label -> "Name")

@@ -1,6 +1,6 @@
 // @SOURCE:/home/seth/Documents/LnP-Web-App/conf/routes
-// @HASH:02e455efa1dac87ad0d90f5c2730343aa906f9b7
-// @DATE:Sat Sep 17 15:21:30 PDT 2016
+// @HASH:aaa36a29afc60904d9821055ef192b8262ec77ae
+// @DATE:Tue Sep 20 23:49:17 PDT 2016
 
 package controllers;
 

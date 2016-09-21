@@ -1,49 +1,42 @@
-@(companies: List[models.Company], company: Form[models.Company])(implicit session: play.api.mvc.Session)
+@(curUser: models.User, group: List[models.User])(implicit session: play.api.mvc.Session)
 
 <html>
     <head>
         <title>Welcome to SnP Server Site</title>
     </head>
     <body>
-            <p>Welcome @session.get("first_name")</p>
-            <h2>New Company</h2>
-            <a href ='@routes.Application.logout'>Logout</a>
-            @helper.form(action = routes.Application.create) {
-                @helper.inputText(company("id"), '_id -> "ABC_ID")
-                @helper.inputText(company("name"), '_label -> "Name")
-                @helper.inputText(company("status"), '_label -> "Status")
-                @helper.inputText(company("allocate"), '_label -> "Allocation")
-                @helper.inputText(company("t"), '_label -> "Type")
-                @helper.inputText(company("fund"), '_label -> "Funding Source")
-
-                <input type="submit" value="New Company" />
-            }
-
+        <h1>Welcome @session.get("User_First_Name")</h1>
+        <h1>About Me</h1>
+            @showUser(curUser)
+        <h1>My Group</h1>
+        <a href="@routes.Application.logout">Signout</a>
+        <a href="@routes.Application.signUp">Add User</a>
+         @if(!group.isEmpty) {
         <table border="1px black">
             <thead>
             <tr>
-                <th>ABC_ID</th>
-                <th>Company Name</th>
-                <th>Status</th>
-                <th>Allocation</th>
-                <th>Type</th>
-                <th>Funding Source</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email Address</th>
+                <th>Company</th>
+                <th>Occupation</th>
+                <th>Birth Date</th>
             </tr>
             </thead>
             <tbody>
-                @companies.map { company =>
+                @group.map { User =>
                 <tr>
-                    <td>@company.id</td>
-                    <td>@company.name</td>
-                    <td>@company.status</td>
-                    <td>@company.allocate</td>
-                    <td>@company.t</td>
-                    <td>@company.fund</td>
+                    <td>@User.first_name</td>
+                    <td>@User.last_name</td>
+                    <td>@User.email_address</td>
+                    <td>@User.company</td>
+                    <td>@User.occupation</td>
+                    <td>@User.birth_date</td>
                     <td>
-                        <a href='@routes.Application.edit(company.id)'>Edit</a>
+                        <a href='@routes.Application.editUser(User.id)'>Edit</a>
                     </td>
                     <td>
-                        @helper.form(action = routes.Application.delete(company.id)){
+                        @helper.form(action = routes.Application.deleteUser(User.id)){
                             <input type="submit" value="Delete" />
                         }
                     </td>
@@ -51,5 +44,8 @@
                 }
             </tbody>
         </table>
+        } else {
+            <p>List is empty</p>
+        }
     </body>
 </html>

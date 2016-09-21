@@ -1,23 +1,23 @@
 [0m[[0mdebug[0m] [0m[0m
 [0m[[0mdebug[0m] [0mInitial source changes: [0m
 [0m[[0mdebug[0m] [0m	removed:Set()[0m
-[0m[[0mdebug[0m] [0m	added: Set(/home/seth/Documents/LnP-Web-App/app/models/Company.scala, /home/seth/Documents/LnP-Web-App/app/models/Login.scala, /home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/login.template.scala, /home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/edit.template.scala, /home/seth/Documents/LnP-Web-App/target/scala-2.11/src_managed/main/routes_routing.scala, /home/seth/Documents/LnP-Web-App/app/models/User.scala, /home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/main.template.scala, /home/seth/Documents/LnP-Web-App/app/controllers/Application.scala, /home/seth/Documents/LnP-Web-App/target/scala-2.11/src_managed/main/controllers/routes.java, /home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/userForm.template.scala, /home/seth/Documents/LnP-Web-App/target/scala-2.11/src_managed/main/routes_reverseRouting.scala)[0m
+[0m[[0mdebug[0m] [0m	added: Set(/home/seth/Documents/LnP-Web-App/app/models/Company.scala, /home/seth/Documents/LnP-Web-App/app/models/Login.scala, /home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/login.template.scala, /home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/showUser.template.scala, /home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/edit.template.scala, /home/seth/Documents/LnP-Web-App/target/scala-2.11/src_managed/main/routes_routing.scala, /home/seth/Documents/LnP-Web-App/app/models/User.scala, /home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/main.template.scala, /home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/signup.template.scala, /home/seth/Documents/LnP-Web-App/app/controllers/Application.scala, /home/seth/Documents/LnP-Web-App/target/scala-2.11/src_managed/main/controllers/routes.java, /home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/userForm.template.scala, /home/seth/Documents/LnP-Web-App/target/scala-2.11/src_managed/main/routes_reverseRouting.scala)[0m
 [0m[[0mdebug[0m] [0m	modified: Set()[0m
 [0m[[0mdebug[0m] [0mRemoved products: Set()[0m
 [0m[[0mdebug[0m] [0mExternal API changes: API Changes: Set()[0m
 [0m[[0mdebug[0m] [0mModified binary dependencies: Set()[0m
-[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set(/home/seth/Documents/LnP-Web-App/app/models/Company.scala, /home/seth/Documents/LnP-Web-App/app/models/Login.scala, /home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/login.template.scala, /home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/edit.template.scala, /home/seth/Documents/LnP-Web-App/target/scala-2.11/src_managed/main/routes_routing.scala, /home/seth/Documents/LnP-Web-App/app/models/User.scala, /home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/main.template.scala, /home/seth/Documents/LnP-Web-App/app/controllers/Application.scala, /home/seth/Documents/LnP-Web-App/target/scala-2.11/src_managed/main/controllers/routes.java, /home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/userForm.template.scala, /home/seth/Documents/LnP-Web-App/target/scala-2.11/src_managed/main/routes_reverseRouting.scala)[0m
+[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set(/home/seth/Documents/LnP-Web-App/app/models/Company.scala, /home/seth/Documents/LnP-Web-App/app/models/Login.scala, /home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/login.template.scala, /home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/showUser.template.scala, /home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/edit.template.scala, /home/seth/Documents/LnP-Web-App/target/scala-2.11/src_managed/main/routes_routing.scala, /home/seth/Documents/LnP-Web-App/app/models/User.scala, /home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/main.template.scala, /home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/signup.template.scala, /home/seth/Documents/LnP-Web-App/app/controllers/Application.scala, /home/seth/Documents/LnP-Web-App/target/scala-2.11/src_managed/main/controllers/routes.java, /home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/userForm.template.scala, /home/seth/Documents/LnP-Web-App/target/scala-2.11/src_managed/main/routes_reverseRouting.scala)[0m
 [0m[[0mdebug[0m] [0m[0m
 [0m[[0mdebug[0m] [0mSources indirectly invalidated by:[0m
 [0m[[0mdebug[0m] [0m	product: Set()[0m
 [0m[[0mdebug[0m] [0m	binary dep: Set()[0m
 [0m[[0mdebug[0m] [0m	external source: Set()[0m
-[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/home/seth/Documents/LnP-Web-App/app/models/Company.scala, /home/seth/Documents/LnP-Web-App/app/models/Login.scala, /home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/login.template.scala, /home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/edit.template.scala, /home/seth/Documents/LnP-Web-App/target/scala-2.11/src_managed/main/routes_routing.scala, /home/seth/Documents/LnP-Web-App/app/models/User.scala, /home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/main.template.scala, /home/seth/Documents/LnP-Web-App/app/controllers/Application.scala, /home/seth/Documents/LnP-Web-App/target/scala-2.11/src_managed/main/controllers/routes.java, /home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/userForm.template.scala, /home/seth/Documents/LnP-Web-App/target/scala-2.11/src_managed/main/routes_reverseRouting.scala)[0m
-[0m[[0mdebug[0m] [0mRecompiling all 11 sources: invalidated sources (11) exceeded 50.0% of all sources[0m
-[0m[[0minfo[0m] [0mCompiling 10 Scala sources and 1 Java source to /home/seth/Documents/LnP-Web-App/target/scala-2.11/classes...[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/home/seth/Documents/LnP-Web-App/app/models/Company.scala, /home/seth/Documents/LnP-Web-App/app/models/Login.scala, /home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/login.template.scala, /home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/showUser.template.scala, /home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/edit.template.scala, /home/seth/Documents/LnP-Web-App/target/scala-2.11/src_managed/main/routes_routing.scala, /home/seth/Documents/LnP-Web-App/app/models/User.scala, /home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/main.template.scala, /home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/signup.template.scala, /home/seth/Documents/LnP-Web-App/app/controllers/Application.scala, /home/seth/Documents/LnP-Web-App/target/scala-2.11/src_managed/main/controllers/routes.java, /home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/userForm.template.scala, /home/seth/Documents/LnP-Web-App/target/scala-2.11/src_managed/main/routes_reverseRouting.scala)[0m
+[0m[[0mdebug[0m] [0mRecompiling all 13 sources: invalidated sources (13) exceeded 50.0% of all sources[0m
+[0m[[0minfo[0m] [0mCompiling 12 Scala sources and 1 Java source to /home/seth/Documents/LnP-Web-App/target/scala-2.11/classes...[0m
 [0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.11.7[0m
 [0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.11.7[0m
-[0m[[0mdebug[0m] [0mRunning cached compiler 3f39c784, interfacing (CompilerInterface) with Scala compiler version 2.11.7[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 2b029a1e, interfacing (CompilerInterface) with Scala compiler version 2.11.7[0m
 [0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
 [0m[[0mdebug[0m] [0m	-deprecation[0m
 [0m[[0mdebug[0m] [0m	-unchecked[0m
@@ -34,16 +34,22 @@
 [0m[[33mwarn[0m] [0m            SQL("SELECT * FROM test_table WHERE ABC_ID={id}").on("id" -> id)().headOption.map {row =>[0m
 [0m[[33mwarn[0m] [0m                                                                ^[0m
 [0m[[33mwarn[0m] [0m/home/seth/Documents/LnP-Web-App/app/models/Login.scala:13: method apply in trait WithResult is deprecated: Use [[fold]], [[foldWhile]] or [[withResult]] instead, which manages resources and memory[0m
-[0m[[33mwarn[0m] [0m            SQL("SELECT first_name, last_name, email_address, passwd FROM UserTable WHERE email_address={email}").on ("email" -> email)().headOption.map { row =>[0m
-[0m[[33mwarn[0m] [0m                                                                                                                     ^[0m
-[0m[[33mwarn[0m] [0mthree warnings found[0m
-[0m[[0mdebug[0m] [0mScala compilation took 37.060328632 s[0m
+[0m[[33mwarn[0m] [0m            SQL("SELECT email_address, passwd FROM UserTable WHERE email_address={email}").on ("email" -> email)().headOption.map { row =>[0m
+[0m[[33mwarn[0m] [0m                                                                                              ^[0m
+[0m[[33mwarn[0m] [0m/home/seth/Documents/LnP-Web-App/app/models/User.scala:33: method apply in trait WithResult is deprecated: Use [[fold]], [[foldWhile]] or [[withResult]] instead, which manages resources and memory[0m
+[0m[[33mwarn[0m] [0m      SQL("SELECT * FROM UserTable WHERE manager_id={MID}").on("MID" -> manager_id)().map { row =>[0m
+[0m[[33mwarn[0m] [0m                                                              ^[0m
+[0m[[33mwarn[0m] [0m/home/seth/Documents/LnP-Web-App/app/models/User.scala:88: method apply in trait WithResult is deprecated: Use [[fold]], [[foldWhile]] or [[withResult]] instead, which manages resources and memory[0m
+[0m[[33mwarn[0m] [0m      SQL("SELECT * FROM UserTable WHERE email_address={email}").on("email" -> email)().headOption.map { row =>[0m
+[0m[[33mwarn[0m] [0m                                                                   ^[0m
+[0m[[33mwarn[0m] [0m5 warnings found[0m
+[0m[[0mdebug[0m] [0mScala compilation took 15.193403648 s[0m
 [0m[[0mdebug[0m] [0mAttempting to call javac directly...[0m
 [0m[[0mdebug[0m] [0mcom.sun.tools.javac.Main not found with appropriate method signature; forking javac instead[0m
-[0m[[0mdebug[0m] [0mForking javac: javac @/tmp/sbt_77797e2e/argfile[0m
+[0m[[0mdebug[0m] [0mForking javac: javac @/tmp/sbt_3f2d4698/argfile[0m
 [0m[[0mdebug[0m] [0mjavac returned exit code: 0[0m
-[0m[[0mdebug[0m] [0mJava compilation took 2.737641272 s[0m
-[0m[[0mdebug[0m] [0mJava analysis took 0.271885297 s[0m
+[0m[[0mdebug[0m] [0mJava compilation took 3.635653526 s[0m
+[0m[[0mdebug[0m] [0mJava analysis took 0.054586218 s[0m
 [0m[[0mdebug[0m] [0mInvalidating by inheritance (transitively)...[0m
 [0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/home/seth/Documents/LnP-Web-App/target/scala-2.11/src_managed/main/routes_routing.scala)[0m
 [0m[[0mdebug[0m] [0mInvalidated by transitive public inheritance: Set(/home/seth/Documents/LnP-Web-App/target/scala-2.11/src_managed/main/routes_routing.scala)[0m
@@ -53,25 +59,33 @@
 [0m[[0mdebug[0m] [0mInvalidated by transitive public inheritance: Set(/home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/main.template.scala)[0m
 [0m[[0mdebug[0m] [0mInvalidated by direct dependency: Set(/home/seth/Documents/LnP-Web-App/app/controllers/Application.scala)[0m
 [0m[[0mdebug[0m] [0mInvalidating by inheritance (transitively)...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/signup.template.scala)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive public inheritance: Set(/home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/signup.template.scala)[0m
+[0m[[0mdebug[0m] [0mInvalidated by direct dependency: Set(/home/seth/Documents/LnP-Web-App/app/controllers/Application.scala)[0m
+[0m[[0mdebug[0m] [0mInvalidating by inheritance (transitively)...[0m
 [0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/home/seth/Documents/LnP-Web-App/app/models/Login.scala)[0m
 [0m[[0mdebug[0m] [0mInvalidated by transitive public inheritance: Set(/home/seth/Documents/LnP-Web-App/app/models/Login.scala)[0m
 [0m[[0mdebug[0m] [0mInvalidated by direct dependency: Set(/home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/login.template.scala, /home/seth/Documents/LnP-Web-App/app/controllers/Application.scala)[0m
 [0m[[0mdebug[0m] [0mInvalidating by inheritance (transitively)...[0m
 [0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/home/seth/Documents/LnP-Web-App/app/models/User.scala)[0m
 [0m[[0mdebug[0m] [0mInvalidated by transitive public inheritance: Set(/home/seth/Documents/LnP-Web-App/app/models/User.scala)[0m
-[0m[[0mdebug[0m] [0mInvalidated by direct dependency: Set(/home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/userForm.template.scala)[0m
+[0m[[0mdebug[0m] [0mInvalidated by direct dependency: Set(/home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/showUser.template.scala, /home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/main.template.scala, /home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/signup.template.scala, /home/seth/Documents/LnP-Web-App/app/controllers/Application.scala, /home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/userForm.template.scala)[0m
 [0m[[0mdebug[0m] [0mInvalidating by inheritance (transitively)...[0m
 [0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/home/seth/Documents/LnP-Web-App/app/controllers/Application.scala)[0m
 [0m[[0mdebug[0m] [0mInvalidated by transitive public inheritance: Set(/home/seth/Documents/LnP-Web-App/app/controllers/Application.scala)[0m
 [0m[[0mdebug[0m] [0mInvalidated by direct dependency: Set(/home/seth/Documents/LnP-Web-App/target/scala-2.11/src_managed/main/routes_reverseRouting.scala, /home/seth/Documents/LnP-Web-App/target/scala-2.11/src_managed/main/routes_routing.scala)[0m
 [0m[[0mdebug[0m] [0mInvalidating by inheritance (transitively)...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/showUser.template.scala)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive public inheritance: Set(/home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/showUser.template.scala)[0m
+[0m[[0mdebug[0m] [0mInvalidated by direct dependency: Set()[0m
+[0m[[0mdebug[0m] [0mInvalidating by inheritance (transitively)...[0m
 [0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/home/seth/Documents/LnP-Web-App/target/scala-2.11/src_managed/main/controllers/routes.java)[0m
 [0m[[0mdebug[0m] [0mInvalidated by transitive public inheritance: Set(/home/seth/Documents/LnP-Web-App/target/scala-2.11/src_managed/main/controllers/routes.java)[0m
-[0m[[0mdebug[0m] [0mInvalidated by direct dependency: Set(/home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/login.template.scala, /home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/edit.template.scala, /home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/main.template.scala, /home/seth/Documents/LnP-Web-App/app/controllers/Application.scala, /home/seth/Documents/LnP-Web-App/target/scala-2.11/src_managed/main/controllers/routes.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by direct dependency: Set(/home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/login.template.scala, /home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/edit.template.scala, /home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/main.template.scala, /home/seth/Documents/LnP-Web-App/app/controllers/Application.scala, /home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/userForm.template.scala)[0m
 [0m[[0mdebug[0m] [0mInvalidating by inheritance (transitively)...[0m
 [0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/home/seth/Documents/LnP-Web-App/target/scala-2.11/src_managed/main/routes_reverseRouting.scala)[0m
 [0m[[0mdebug[0m] [0mInvalidated by transitive public inheritance: Set(/home/seth/Documents/LnP-Web-App/target/scala-2.11/src_managed/main/routes_reverseRouting.scala)[0m
-[0m[[0mdebug[0m] [0mInvalidated by direct dependency: Set(/home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/login.template.scala, /home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/edit.template.scala, /home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/main.template.scala, /home/seth/Documents/LnP-Web-App/app/controllers/Application.scala, /home/seth/Documents/LnP-Web-App/target/scala-2.11/src_managed/main/controllers/routes.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by direct dependency: Set(/home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/login.template.scala, /home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/edit.template.scala, /home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/main.template.scala, /home/seth/Documents/LnP-Web-App/app/controllers/Application.scala, /home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/userForm.template.scala)[0m
 [0m[[0mdebug[0m] [0mInvalidating by inheritance (transitively)...[0m
 [0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/login.template.scala)[0m
 [0m[[0mdebug[0m] [0mInvalidated by transitive public inheritance: Set(/home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/login.template.scala)[0m
@@ -79,15 +93,15 @@
 [0m[[0mdebug[0m] [0mInvalidating by inheritance (transitively)...[0m
 [0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/home/seth/Documents/LnP-Web-App/app/models/Company.scala)[0m
 [0m[[0mdebug[0m] [0mInvalidated by transitive public inheritance: Set(/home/seth/Documents/LnP-Web-App/app/models/Company.scala)[0m
-[0m[[0mdebug[0m] [0mInvalidated by direct dependency: Set(/home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/main.template.scala, /home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/edit.template.scala, /home/seth/Documents/LnP-Web-App/app/controllers/Application.scala)[0m
+[0m[[0mdebug[0m] [0mInvalidated by direct dependency: Set(/home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/edit.template.scala)[0m
 [0m[[0mdebug[0m] [0mInvalidating by inheritance (transitively)...[0m
 [0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/edit.template.scala)[0m
 [0m[[0mdebug[0m] [0mInvalidated by transitive public inheritance: Set(/home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/edit.template.scala)[0m
-[0m[[0mdebug[0m] [0mInvalidated by direct dependency: Set(/home/seth/Documents/LnP-Web-App/app/controllers/Application.scala)[0m
+[0m[[0mdebug[0m] [0mInvalidated by direct dependency: Set()[0m
 [0m[[0mdebug[0m] [0mInvalidating by inheritance (transitively)...[0m
 [0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/userForm.template.scala)[0m
 [0m[[0mdebug[0m] [0mInvalidated by transitive public inheritance: Set(/home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/userForm.template.scala)[0m
-[0m[[0mdebug[0m] [0mInvalidated by direct dependency: Set()[0m
+[0m[[0mdebug[0m] [0mInvalidated by direct dependency: Set(/home/seth/Documents/LnP-Web-App/target/scala-2.11/twirl/main/views/html/signup.template.scala)[0m
 [0m[[0mdebug[0m] [0mNew invalidations:[0m
 [0m[[0mdebug[0m] [0m	Set()[0m
 [0m[[0mdebug[0m] [0mInitial set of included nodes: Set()[0m
