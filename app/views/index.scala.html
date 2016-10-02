@@ -1,0 +1,58 @@
+@()(implicit loggedUser: Option[User], messages: Messages)
+
+@import views.html.tags.auth._
+@import controllers.routes
+
+@servicesString(user: User) = @{ user.services match {
+	case Nil => "none"
+	case head :: Nil => head
+	case init :+ last => init.mkString(", ") + " " + Messages("and") + " " + last
+}}
+
+@views.html.templates.default(title = "Welcome to SnP Server Site", loggedUser, tab = "index") {
+
+    <body>
+        <h1>Welcome @loggedUser.nick</h1>
+        <h1>About Me</h1>
+            @showUser(loggedUser)
+        <h1>My Group</h1>
+        <a href="@routes.Application.logout">Signout</a>
+        <a href="@routes.Application.signUp">Add User</a>
+         @if(!group.isEmpty) {
+        <table class="table table-striped table-hover">
+            <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email Address</th>
+                <th>Company</th>
+                <th>Occupation</th>
+                <th>Birth Date</th>
+            </tr>
+            </thead>
+            <tbody>
+                @group.map { User =>
+                <tr>
+                    <td>@User.first_name</td>
+                    <td>@User.last_name</td>
+                    <td>@User.email_address</td>
+                    <td>@User.company</td>
+                    <td>@User.occupation</td>
+                    <td>@User.birth_date</td>
+                    <td>
+                        <a href='@routes.Application.editUser(User.id)'>Edit</a>
+                    </td>
+                    <td>
+             
+                    </td>
+                </tr>
+                }
+            </tbody>
+        </table>
+        } else {
+            <p>List is empty</p>
+        }
+    </body>
+
+	}
+	
